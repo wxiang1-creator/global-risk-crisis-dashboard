@@ -21,7 +21,7 @@ The layout is responsive and can also be viewed on tablet and mobile browsers, b
 
 Vercel deployment link:
 
-`Add your Vercel deployment URL here after deployment`
+(https://global-risk-crisis-dashboard-xiang-eew3rffxe.vercel.app/)
 
 ## Developer Manual
 
@@ -53,4 +53,4 @@ The full developer manual is located here:
 - Recharts
 - Supabase JavaScript Client
 - Dotenv
-'@ | Set-Content -Encoding UTF8 README.md
+
