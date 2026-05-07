@@ -1,4 +1,7 @@
-﻿import { createClient } from '@supabase/supabase-js'
+﻿import dotenv from 'dotenv'
+dotenv.config({ path: '.env.local' })
+
+import { createClient } from '@supabase/supabase-js'
 
 export default async function handler(req, res) {
   try {
@@ -20,6 +23,11 @@ export default async function handler(req, res) {
 
     res.status(200).json(data)
   } catch (error) {
-    res.status(500).json({ error: 'Failed to load saved events' })
+      res.status(500).json({
+        error: 'Failed to save event',
+        details: error.message,
+        hasUrl: Boolean(process.env.SUPABASE_URL),
+        hasKey: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY)
+      })
   }
 }
