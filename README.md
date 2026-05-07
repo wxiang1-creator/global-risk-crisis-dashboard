@@ -21,7 +21,7 @@ The layout is responsive and can also be viewed on tablet and mobile browsers, b
 
 Vercel deployment link:
 
-(https://global-risk-crisis-dashboard-xiang-eew3rffxe.vercel.app/)
+(https://global-risk-crisis-dashboard-xiang.vercel.app/)
 
 ## Developer Manual
 
