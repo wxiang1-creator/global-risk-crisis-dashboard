@@ -1,5 +1,4 @@
-@'
-# Developer Manual
+﻿# Developer Manual
 
 ## Project Overview
 

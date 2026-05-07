@@ -1,5 +1,4 @@
-@'
-# Global Risk & Crisis Intelligence Dashboard
+﻿# Global Risk & Crisis Intelligence Dashboard
 
 ## Project Description
 
