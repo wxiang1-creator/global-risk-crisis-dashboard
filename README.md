@@ -1,16 +1,57 @@
-# React + Vite
+@'
+# Global Risk & Crisis Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+The Global Risk & Crisis Intelligence Dashboard is a full-stack web application that aggregates public crisis and environmental risk data from multiple APIs and presents it through an interactive dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project focuses on the problem that global disaster and crisis data is often fragmented across different public platforms. This application helps users view recent earthquake events, natural hazard events, event category summaries, geographic event distribution, selected event details, and weather context for selected locations.
 
-## React Compiler
+## Target Browsers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This application is designed for contemporary desktop browsers, including:
 
-## Expanding the ESLint configuration
+- Google Chrome
+- Microsoft Edge
+- Firefox
+- Safari
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The layout is responsive and can also be viewed on tablet and mobile browsers, but the primary target environment is a modern desktop browser.
+
+## Live Deployment
+
+Vercel deployment link:
+
+`Add your Vercel deployment URL here after deployment`
+
+## Developer Manual
+
+The full developer manual is located here:
+
+[Developer Manual](docs/developer-manual.md)
+
+## Main Features
+
+- Interactive global event map using React Leaflet
+- Event category summary chart using Recharts
+- External crisis data from USGS Earthquake API and NASA EONET API
+- Weather context from Open-Meteo API
+- Saved event storage using Supabase
+- Backend API routes for fetching external data, saving events, and reading saved events
+
+## APIs Used
+
+- USGS Earthquake API
+- NASA EONET API
+- Open-Meteo API
+- Supabase Database
+
+## JavaScript Libraries Used
+
+- React Router DOM
+- React Leaflet
+- Leaflet
+- Recharts
+- Supabase JavaScript Client
+- Dotenv
+'@ | Set-Content -Encoding UTF8 README.md
