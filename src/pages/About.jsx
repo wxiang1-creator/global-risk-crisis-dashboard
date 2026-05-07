@@ -1,35 +1,89 @@
 ﻿function About() {
   return (
-    <div className="card">
-      <h1>About This Project</h1>
-      <p>
-        The Global Risk & Crisis Intelligence Dashboard is a full-stack web
-        application designed to centralize public crisis and environmental risk
-        information. The project addresses the problem that global disaster data
-        is often fragmented across multiple public platforms.
-      </p>
+    <div>
+      <section className="sub-hero">
+        <span className="eyebrow">Project Overview</span>
+        <h1>About This Project</h1>
+        <p>
+          The Global Risk & Crisis Intelligence Dashboard is a full-stack web
+          application that centralizes public crisis and environmental risk data
+          into one interactive dashboard.
+        </p>
+      </section>
 
-      <h2>Target Users</h2>
-      <p>
-        The target users include students, researchers, journalists, policy
-        analysts, and general users who want a quick overview of global natural
-        hazard events.
-      </p>
+      <section className="content-grid">
+        <div className="card info-card">
+          <h2>Problem Statement</h2>
+          <p>
+            Global disaster and crisis data is often fragmented across multiple
+            public platforms. This makes it harder for users to quickly
+            understand event locations, severity, and patterns.
+          </p>
+        </div>
 
-      <h2>Data Sources</h2>
-      <ul>
-        <li>USGS Earthquake API for recent earthquake data</li>
-        <li>NASA EONET API for natural hazard events</li>
-        <li>Open-Meteo API for weather context by location</li>
-        <li>Supabase for saved event records</li>
-      </ul>
+        <div className="card info-card">
+          <h2>Project Goal</h2>
+          <p>
+            This system combines public API data, normalizes events into a
+            consistent structure, and presents them through maps, charts, and
+            event detail panels.
+          </p>
+        </div>
+      </section>
 
-      <h2>System Goal</h2>
-      <p>
-        The goal is to combine public API data, normalize it into a consistent
-        event structure, and display it through a dashboard with maps, charts,
-        and event details.
-      </p>
+      <section className="card">
+        <h2>Target Users</h2>
+        <div className="feature-grid">
+          <div className="feature-item">
+            <span className="feature-icon">🎓</span>
+            <h3>Students & Researchers</h3>
+            <p>Analyze environmental and disaster trends using public data.</p>
+          </div>
+
+          <div className="feature-item">
+            <span className="feature-icon">📰</span>
+            <h3>Journalists</h3>
+            <p>Monitor recent natural events and crisis-related updates.</p>
+          </div>
+
+          <div className="feature-item">
+            <span className="feature-icon">🌎</span>
+            <h3>General Public</h3>
+            <p>Understand where major environmental events are happening.</p>
+          </div>
+
+          <div className="feature-item">
+            <span className="feature-icon">📊</span>
+            <h3>Policy Analysts</h3>
+            <p>Explore regional risk distribution and event frequency.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="card">
+        <h2>Data Sources</h2>
+        <div className="source-list">
+          <div className="source-pill">
+            <strong>USGS Earthquake API</strong>
+            <span>Recent earthquake magnitude, location, and time data</span>
+          </div>
+
+          <div className="source-pill">
+            <strong>NASA EONET API</strong>
+            <span>Natural hazard events such as wildfires and storms</span>
+          </div>
+
+          <div className="source-pill">
+            <strong>Open-Meteo API</strong>
+            <span>Weather context based on selected event coordinates</span>
+          </div>
+
+          <div className="source-pill">
+            <strong>Supabase</strong>
+            <span>Database storage for saved crisis events</span>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
